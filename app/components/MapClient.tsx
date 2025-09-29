@@ -10,7 +10,7 @@ type Props = {
   dataUrl?: string;
 };
 
-export default function MapClient({ dataUrl = "/data/sample_polygons.geojson" }: Props) {
+export default function MapClient({ dataUrl = "/data/edmonton.geojson" }: Props) {
   const [data, setData] = useState<FeatureCollection<Geometry, any> | null>(null);
 
   useEffect(() => {

@@ -1,6 +1,4 @@
-import dynamic from "next/dynamic";
-
-const MapClient = dynamic(() => import("./components/MapClient"), { ssr: false });
+import MapWrapper from "./components/MapWrapper";
 
 export default function HomePage() {
   return (
@@ -13,7 +11,7 @@ export default function HomePage() {
           and start building.
         </p>
       </section>
-      <MapClient />
+      <MapWrapper />
     </main>
   );
 }
